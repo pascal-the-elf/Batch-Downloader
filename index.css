@@ -1,0 +1,7 @@
+* {
+    font-family: Verdana, '微軟正黑體', 'Microsoft JhengHei', 'PingFang', sans-serif;
+    letter-spacing: 0.6px;
+}
+input, label {
+  font-size: 1.2em;
+}

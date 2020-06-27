@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Batch Downloader</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/flatly/bootstrap.min.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="./">Batch Downloader</a>
+    </nav>
+    <div class="container">
+        <br>
+
+        <p>
+            1. Enter Base URL and Variables <br>
+            2. Press Download <br>
+            3. Wait <br>
+            4. Get Your Files In A Single Zipped File <br>
+        </p>
+
+        <div class="form-group">
+            <label for="baseURL">Base URL</label>
+            <input type="url" class="form-control" id="baseURL" aria-describedby="URLHelp" placeholder="https://www.google.com/$1$">
+            <small id="URLHelp" class="form-text text-muted">use $[1-9]$ as variables</small>
+        </div>
+
+        <div id="variables">
+            <div class="variable">
+                <div class="form-group">
+                    <label>Variable Type</label>
+                    <select class="form-control type">
+                        <option selected>Number Range</option>
+                        <option>Dictionary</option>
+                    </select>
+                </div>
+                <div class="form-group nr">
+                    <label>Value</label>
+                    <input type="url" class="form-control value" placeholder="1/9">
+                    <small class="form-text text-muted">min/max</small>
+                </div>
+                <div class="form-group dt">
+                    <label>Value</label>
+                    <textarea class="form-control value" rows="3"></textarea>
+                    <small class="form-text text-muted">one string one row</small>
+                </div>
+            </div>
+            <div class="variable">
+                <div class="form-group">
+                    <label>Variable Type</label>
+                    <select class="form-control type">
+                        <option selected>Number Range</option>
+                        <option>Dictionary</option>
+                    </select>
+                </div>
+                <div class="form-group nr">
+                    <label>Value</label>
+                    <input type="url" class="form-control value" placeholder="1/9">
+                    <small class="form-text text-muted">min/max</small>
+                </div>
+                <div class="form-group dt">
+                    <label>Value</label>
+                    <textarea class="form-control value" rows="3"></textarea>
+                    <small class="form-text text-muted">one string one row</small>
+                </div>
+            </div>
+            <div class="variable">
+                <div class="form-group">
+                    <label>Variable Type</label>
+                    <select class="form-control type">
+                        <option selected>Number Range</option>
+                        <option>Dictionary</option>
+                    </select>
+                </div>
+                <div class="form-group nr">
+                    <label>Value</label>
+                    <input type="url" class="form-control value" placeholder="1/9">
+                    <small class="form-text text-muted">min/max</small>
+                </div>
+                <div class="form-group dt">
+                    <label>Value</label>
+                    <textarea class="form-control value" rows="3"></textarea>
+                    <small class="form-text text-muted">one string one row</small>
+                </div>
+            </div>
+            <div class="variable">
+                <div class="form-group">
+                    <label>Variable Type</label>
+                    <select class="form-control type">
+                        <option selected>Number Range</option>
+                        <option>Dictionary</option>
+                    </select>
+                </div>
+                <div class="form-group nr">
+                    <label>Value</label>
+                    <input type="url" class="form-control value" placeholder="1/9">
+                    <small class="form-text text-muted">min/max</small>
+                </div>
+                <div class="form-group dt">
+                    <label>Value</label>
+                    <textarea class="form-control value" rows="3"></textarea>
+                    <small class="form-text text-muted">one string one row</small>
+                </div>
+            </div>
+            <div class="variable">
+                <div class="form-group">
+                    <label>Variable Type</label>
+                    <select class="form-control type">
+                        <option selected>Number Range</option>
+                        <option>Dictionary</option>
+                    </select>
+                </div>
+                <div class="form-group nr">
+                    <label>Value</label>
+                    <input type="url" class="form-control value" placeholder="1/9">
+                    <small class="form-text text-muted">min/max</small>
+                </div>
+                <div class="form-group dt">
+                    <label>Value</label>
+                    <textarea class="form-control value" rows="3"></textarea>
+                    <small class="form-text text-muted">one string one row</small>
+                </div>
+            </div>
+            <div class="variable">
+                <div class="form-group">
+                    <label>Variable Type</label>
+                    <select class="form-control type">
+                        <option selected>Number Range</option>
+                        <option>Dictionary</option>
+                    </select>
+                </div>
+                <div class="form-group nr">
+                    <label>Value</label>
+                    <input type="url" class="form-control value" placeholder="1/9">
+                    <small class="form-text text-muted">min/max</small>
+                </div>
+                <div class="form-group dt">
+                    <label>Value</label>
+                    <textarea class="form-control value" rows="3"></textarea>
+                    <small class="form-text text-muted">one string one row</small>
+                </div>
+            </div>
+            <div class="variable">
+                <div class="form-group">
+                    <label>Variable Type</label>
+                    <select class="form-control type">
+                        <option selected>Number Range</option>
+                        <option>Dictionary</option>
+                    </select>
+                </div>
+                <div class="form-group nr">
+                    <label>Value</label>
+                    <input type="url" class="form-control value" placeholder="1/9">
+                    <small class="form-text text-muted">min/max</small>
+                </div>
+                <div class="form-group dt">
+                    <label>Value</label>
+                    <textarea class="form-control value" rows="3"></textarea>
+                    <small class="form-text text-muted">one string one row</small>
+                </div>
+            </div>
+            <div class="variable">
+                <div class="form-group">
+                    <label>Variable Type</label>
+                    <select class="form-control type">
+                        <option selected>Number Range</option>
+                        <option>Dictionary</option>
+                    </select>
+                </div>
+                <div class="form-group nr">
+                    <label>Value</label>
+                    <input type="url" class="form-control value" placeholder="1/9">
+                    <small class="form-text text-muted">min/max</small>
+                </div>
+                <div class="form-group dt">
+                    <label>Value</label>
+                    <textarea class="form-control value" rows="3"></textarea>
+                    <small class="form-text text-muted">one string one row</small>
+                </div>
+            </div>
+            <div class="variable">
+                <div class="form-group">
+                    <label>Variable Type</label>
+                    <select class="form-control type">
+                        <option selected>Number Range</option>
+                        <option>Dictionary</option>
+                    </select>
+                </div>
+                <div class="form-group nr">
+                    <label>Value</label>
+                    <input type="url" class="form-control value" placeholder="1/9">
+                    <small class="form-text text-muted">min/max</small>
+                </div>
+                <div class="form-group dt">
+                    <label>Value</label>
+                    <textarea class="form-control value" rows="3"></textarea>
+                    <small class="form-text text-muted">one string one row</small>
+                </div>
+            </div>
+            <div class="variable">
+                <div class="form-group">
+                    <label>Variable Type</label>
+                    <select class="form-control type">
+                        <option selected>Number Range</option>
+                        <option>Dictionary</option>
+                    </select>
+                </div>
+                <div class="form-group nr">
+                    <label>Value</label>
+                    <input type="url" class="form-control value" placeholder="1/9">
+                    <small class="form-text text-muted">min/max</small>
+                </div>
+                <div class="form-group dt">
+                    <label>Value</label>
+                    <textarea class="form-control value" rows="3"></textarea>
+                    <small class="form-text text-muted">one string one row</small>
+                </div>
+            </div>
+        </div>
+        <button id="download" type="button" class="btn btn-primary">Download</button>
+        <p id="log"></p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/gildas-lormeau/zip.js@master/WebContent/zip.min.js"></script>
+    <script>
+    zip.workerScriptsPath = "./zip/";
+    var _Zipped;
+
+    document.getElementById("baseURL").addEventListener("input", function() {
+        makeVar(this.value);
+    });
+    document.getElementById("download").addEventListener("click", function() {
+        Download();
+    });
+    for(let i = 0; i < document.getElementsByClassName("type").length; i++) {
+        new switchType(document.getElementsByClassName("type")[i], [
+            document.getElementsByClassName("nr")[i],
+            document.getElementsByClassName("dt")[i]
+        ]);
+    }
+    makeVar("");
+
+    function Download() {
+        document.getElementById("log").innerHTML = "";
+        document.getElementById("download").disabled = true;
+        log("Initializing.");
+        let base = document.getElementById("baseURL").value, vars = [], varN = makeVar(base), maxN = 1, URLs = [];
+        log("Generating Targets.");
+        for(let i = 0; i < varN; i++) {
+            vars.push({
+                type: document.getElementsByClassName("type")[i].value,
+                value: document.getElementsByClassName("type")[i].value == "Number Range" ? document.getElementsByClassName("value")[2*i].value : document.getElementsByClassName("value")[1+2*i].value
+            });
+        }
+        for(let i = 0; i < varN; i++) {
+            if(vars[i].type == "Number Range") {
+                let v = [];
+                for(let j = parseInt(vars[i].value.split("/")[0]); j <= parseInt(vars[i].value.split("/")[1]); j++) v.push(j);
+                vars[i].value = v;
+            }
+            if(vars[i].type == "Dictionary") {
+                vars[i].value = vars[i].value.split("\n");
+            }
+            maxN *= vars[i].value.length;
+        }
+
+        function urls(d, base) {
+            for(let i = 0; i < vars[d].value.length; i++) {
+                let _base = base.replace(/\$([1-9])\$/, vars[d].value[i]);
+                if(d < vars.length - 1) urls(d+1, _base);
+                else URLs.push(_base);
+            }
+        }
+
+        if(varN > 0) urls(0, base);
+        log("All Targets Generated.");
+        makeZip(URLs).then(()=>{
+            document.getElementById("download").disabled = false;
+        });
+
+    }
+
+    function log(t) {
+        document.getElementById("log").innerHTML += t + "<br>";
+    }
+
+    function switchType(select, types) {
+        this.select = select;
+        this.types = types;
+        this.switch = () => {
+            this.types.forEach(elm => {
+                if(this.select.value == "Number Range" && elm.classList.contains("nr")) {
+                    elm.style.display = "";
+                }
+                else if(this.select.value == "Dictionary" && elm.classList.contains("dt")) {
+                    elm.style.display = "";
+                }
+                else {
+                    elm.style.display = "none";
+                }
+            });
+        };
+        this.select.addEventListener("change", this.switch);
+        this.switch();
+    }
+
+    function makeVar(text) {
+        var n = 0;
+        while(text.search(/\$([1-9])\$/) > -1) {
+            text = text.replace(/\$([1-9])\$/, "!!!");
+            n++;
+        }
+        console.log("[Variables] Find "+n+" Variables.");
+        var variablesDiv = document.getElementsByClassName("variable");
+        for(let i = 0; i < 10; i++) {
+            try {
+                if(i < n) variablesDiv[i].style.display = "";
+                else variablesDiv[i].style.display = "none";
+            }
+            catch(e) {}
+        }
+        return n;
+    }
+
+
+    async function makeZip(urls) {
+        let total = urls.length, finished = 0;
+        let promises = [], blobs = [], filenames = [];
+        console.log("[Downloader] Start Fetching Files. ");
+        log("[Downloader] Start Fetching Files. ");
+        for(let i = 0; i < total; i++) {
+            filenames.push(urls[i].substring(urls[i].lastIndexOf("/")+1));
+            console.log("[Downloader] Fetching File. ", {id: i, name: filenames[i]});
+            log("[Downloader] Downloading "+filenames[i]);
+            promises.push(
+                fetch(urls[i]).then(response => {
+                    if(response.ok) return response.blob();
+                    throw new Error("Server Did Not Return 2XX Status Code.");
+                }).then(blob => {
+                    console.log("[Downloader] Fetched File. ", {id: i, name: filenames[i], data: blob});
+                    log("[Downloader] "+filenames[i]+" Downloaded.");
+                    return blob;
+                }).catch(error => {
+                    console.error("[Downloader] Fetch Error. ", error.message);
+                    log("[Downloader] Error. Failed to Download "+filenames[i]);
+                })
+            );
+        }
+        blobs = await Promise.all(promises);
+
+        zip.createWriter(new zip.BlobWriter("application/zip"), function(writer) {
+            log("[File Writer] Writing Files.");
+            for(let i = 0; i < total; i++) {
+                writer.add(filenames[i], new zip.BlobReader(blobs[i]), function() {
+                    log("[File Writer] File Written. "+filenames[i]);
+                    console.log("[File Writer] File Written. ", {id: i, name: filenames[i], data: blobs[i]});
+                    finished++;
+                    if(finished >= total) {
+                        writer.close(Zipped => {
+                            log("[File Writer] All Files Written.");
+                            console.log("[File Zipper] Files Zipped.  ", Zipped);
+                            var a = document.createElement("a");
+                            document.body.appendChild(a);
+                            a.style = "display: none";
+                            _Zipped = Zipped;
+                            url = window.URL.createObjectURL(Zipped);
+                            a.href = url;
+                            a.download = "files.zip";
+                            log("Downloading Zipped Files From Local Server.");
+                            a.click();
+                            window.URL.revokeObjectURL(url);
+                        });
+                    }
+                });
+            }
+        }, console.error);
+    }
+</script>
+</body>
+</html>
