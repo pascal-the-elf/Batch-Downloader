@@ -1,2 +1,2 @@
 # Batch Downloader
- Download File With Variables!
+ Download Files With Variables!
