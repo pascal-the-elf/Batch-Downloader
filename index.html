@@ -10,6 +10,17 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="./">Batch Downloader</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/pascal-the-elf/Batch-Downloader" target="_blank">GitHub</a>
+                </li>
+            </ul>
+        </div>
     </nav>
     <div class="container">
         <br>
@@ -342,7 +353,7 @@
                     throw new Error("Server Did Not Return 2XX Status Code.");
                 }).then(blob => {
                     console.log("[Downloader] Fetched File. ", {id: i, name: filenames[i], data: blob});
-                    log("[Downloader] "+filenames[i]+" Downloaded.");
+                    log("[Downloader] "+filenames[i]+" Downloaded. Size: "+blob.size+" Bytes");
                     return blob;
                 }).catch(error => {
                     console.error("[Downloader] Fetch Error. ", error.message);
