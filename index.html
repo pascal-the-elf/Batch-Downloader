@@ -353,7 +353,7 @@
         blobs = await Promise.all(promises);
 
         zip.createWriter(new zip.BlobWriter("application/zip"), function(writer) {
-            log("[File Writer] Writing Files.");
+            log("[File Writer] Writing Files. It may take some time.");
             for(let i = 0; i < total; i++) {
                 writer.add(filenames[i], new zip.BlobReader(blobs[i]), function() {
                     log("[File Writer] File Written. "+filenames[i]);
